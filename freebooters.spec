@@ -21,7 +21,7 @@ golden age of piracy. It is based on the game mechanics of Sid Meier's
 "Pirates!", but is not an exact clone.
 
 %description -l pl
-Freebooters jest gr± strategiczn±, której akcja rozgrywa siê na morzu
+Freebooters jest gr± strategiczn±, której akcja rozgrywa siê na Morzu
 Karaibskim w czasach z³otej ery piratów. Bazuje na grze Sida Meiera
 "Pirates!", ale nie jest jej dok³adnym klonem.
 
