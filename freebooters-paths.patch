@@ -1,0 +1,56 @@
+diff -urN aa/freebooters-0.2.1/Makefile freebooters-0.2.1/Makefile
+--- aa/freebooters-0.2.1/Makefile	2004-08-12 14:09:30.000000000 +0200
++++ freebooters-0.2.1/Makefile	2004-08-30 00:10:41.423681192 +0200
+@@ -30,27 +30,24 @@
+ 	rm -f *~
+ 
+ install:
+-	mkdir -p $(DATAINSTALLPREFIX)share/games/freebooters/harbours/
+-	mkdir -p $(DATAINSTALLPREFIX)share/games/freebooters/graphics/
+-	mkdir -p $(DATAINSTALLPREFIX)share/games/freebooters/sprites/
+-	mkdir -p $(DATAINSTALLPREFIX)share/games/freebooters/sound/
+-	mkdir -p $(BININSTALLPREFIX)share/doc/freebooters/
+-	install ./data/freebooters.conf /etc
+-	install ./graphics/*jpg $(DATAINSTALLPREFIX)share/games/freebooters/graphics
+-	install ./data/harbours/[a-z]* $(DATAINSTALLPREFIX)share/games/freebooters/harbours
+-	install ./data/gameplay-parameters.conf $(DATAINSTALLPREFIX)share/games/freebooters
+-	install ./sprites/*png $(DATAINSTALLPREFIX)share/games/freebooters/sprites
+-	install ./sound/[a-z]* $(DATAINSTALLPREFIX)share/games/freebooters/sound
+-	install ./doc/[a-z]* $(BININSTALLPREFIX)share/doc/freebooters
+-	install ./doc/[AB]* $(BININSTALLPREFIX)share/doc/freebooters
+-	install ./doc/CO* $(BININSTALLPREFIX)share/doc/freebooters
+-	install ./doc/ch* $(BININSTALLPREFIX)share/doc/freebooters
+-	install ./doc/[D-Z]* $(BININSTALLPREFIX)share/doc/freebooters
+-	install ./vera.ttf $(DATAINSTALLPREFIX)share/games/freebooters
+-	install ./$(PROGNAME1) $(BININSTALLPREFIX)bin
+-	install ./$(PROGNAME2) $(BININSTALLPREFIX)bin
+-	install ./freebooters.6 $(MANDIR)man6
+-	install ./buccaneer.6 $(MANDIR)man6
++	mkdir -p $(DESTDIR)$(DATADIR)/freebooters/harbours/
++	mkdir -p $(DESTDIR)$(DATADIR)/freebooters/graphics/
++	mkdir -p $(DESTDIR)$(DATADIR)/freebooters/sprites/
++	mkdir -p $(DESTDIR)$(DATADIR)/freebooters/sound/
++	mkdir -p $(DESTDIR)$(SYSCONFDIR)
++	mkdir -p $(DESTDIR)$(BINDIR)
++	mkdir -p $(DESTDIR)$(MANDIR)/man6
++	install ./data/freebooters.conf $(DESTDIR)$(SYSCONFDIR)
++	install ./graphics/*jpg $(DESTDIR)$(DATADIR)/freebooters/graphics
++	install ./data/harbours/[a-z]* $(DESTDIR)$(DATADIR)/freebooters/harbours
++	install ./data/gameplay-parameters.conf $(DESTDIR)$(DATADIR)/freebooters
++	install ./sprites/*png $(DESTDIR)$(DATADIR)/freebooters/sprites
++	install ./sound/[a-z]* $(DESTDIR)$(DATADIR)/freebooters/sound
++	install ./vera.ttf $(DESTDIR)$(DATADIR)/freebooters
++	install ./$(PROGNAME1) $(DESTDIR)$(BINDIR)
++	install ./$(PROGNAME2) $(DESTDIR)$(BINDIR)
++	install ./freebooters.6 $(DESTDIR)$(MANDIR)/man6
++	install ./buccaneer.6 $(DESTDIR)$(MANDIR)/man6
+ 
+ uninstall:
+ 	rm -rf $(DATAINSTALLPREFIX)share/games/freebooters/
+@@ -58,4 +55,4 @@
+ 	rm -f $(BININSTALLPREFIX)bin/$(PROGNAME1)
+ 	rm -f $(BININSTALLPREFIX)bin/$(PROGNAME2)
+ 	rm -f $(MANDIR)man6/buccaneer.6
+-	rm -f $(MANDIR)man6/freebooters.6
+\ Brak znaku nowej linii na koñcu pliku
++	rm -f $(MANDIR)man6/freebooters.6
