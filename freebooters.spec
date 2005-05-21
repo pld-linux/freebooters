@@ -13,6 +13,8 @@ BuildRequires:	SDL-devel >= 1.2.0
 BuildRequires:	SDL_image-devel >= 1.2.0
 BuildRequires:	SDL_mixer-devel >= 1.2.0
 BuildRequires:	SDL_ttf-devel >= 2.0.0
+BuildRequires:	libstdc++-devel
+BuildRequires:	sed >= 4.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -53,6 +55,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc doc/{AUTHORS,changelog-until-0.2.txt,NEWS,README,TODO}
 %attr(755,root,root) %{_bindir}/*
-%config(noreplace) %verify(not size mtime md5) %{_sysconfdir}/%{name}.conf
+%config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/%{name}.conf
 %{_datadir}/%{name}
 %{_mandir}/man6/*.6*
