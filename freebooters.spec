@@ -1,5 +1,5 @@
 Summary:	Free "Pirates!" clone
-Summary(pl):	Klon gry "Pirates!"
+Summary(pl.UTF-8):   Klon gry "Pirates!"
 Name:		freebooters
 Version:	0.2.1
 Release:	1
@@ -22,10 +22,10 @@ Freebooters is a strategy game settled in the Caribbean Sea during the
 golden age of piracy. It is based on the game mechanics of Sid Meier's
 "Pirates!", but is not an exact clone.
 
-%description -l pl
-Freebooters jest gr± strategiczn±, której akcja rozgrywa siê na Morzu
-Karaibskim w czasach z³otej ery piratów. Bazuje na grze Sida Meiera
-"Pirates!", ale nie jest jej dok³adnym klonem.
+%description -l pl.UTF-8
+Freebooters jest grÄ… strategicznÄ…, ktÃ³rej akcja rozgrywa siÄ™ na Morzu
+Karaibskim w czasach zÅ‚otej ery piratÃ³w. Bazuje na grze Sida Meiera
+"Pirates!", ale nie jest jej dokÅ‚adnym klonem.
 
 %prep
 %setup -q
