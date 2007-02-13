@@ -1,5 +1,5 @@
 Summary:	Free "Pirates!" clone
-Summary(pl.UTF-8):   Klon gry "Pirates!"
+Summary(pl.UTF-8):	Klon gry "Pirates!"
 Name:		freebooters
 Version:	0.2.1
 Release:	1
